@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="/script.js"></script>
+  <title>Rock, Paper, Scissors, Lizard, Spock</title>
+</head>
+<body>
+  <div class="container">
+    <header class="scoreboard">
+      <div class="options">
+        <h1>Rock</h1>
+        <h1>Paper</h1>
+        <h1>Scissors</h1>
+        <h1>Lizard</h1>
+        <h1>Spock</h1>
+      </div>
+      <div class="score-container">
+        <h3>Score</h3>
+        <h1 id="score">0</h1>
+      </div>
+    </header>
+    <div class="game-container">
+      <div id="scissors" class="grid-item one"><img id="scissors" src="./images/icon-scissors.svg" alt="Scissors"></div>
+      <div id="spock" class="grid-item two"><img id="spock" src="./images/icon-spock.svg" alt="Spock"></div>
+      <div id="paper" class="grid-item three"><img id="paper" src="./images/icon-paper.svg" alt="Paper"></div>
+      <div id="lizard" class="grid-item four"><img id="lizard" src="./images/icon-lizard.svg" alt="Lizard"></div>
+      <div id="rock" class="grid-item five"><img id="rock" src="./images/icon-rock.svg" alt="Rock"></div>
+    </div>
+    <div class="faceoff-container hide">
+      <div class="player">
+        <div class="player-choice-msg">You picked</div>
+        <div class="human player-choice"><img id="player" src="#" alt="Player's game choice"></div>
+      </div>
+      <div class="result-container hide">
+        <div class="result"></div>
+        <button class="game-reset">Play Again</button>
+      </div>
+      <div class="computer">
+        <div class="player-choice-msg">The House picked</div>
+        <div class="precursor"></div>
+        <div class="nonhuman player-choice hide"><img id="computer" src="#" alt="Computer's game choice"></div>
+      </div>
+    </div>
+    <div class="winner-circle box-shadow hide"></div>
+    <aside class="rules">
+      Rules
+    </aside>
+    <modal id="modal">
+      <header>
+        <h1>Rules</h1>
+        <span class="close">&times;</span>
+      </header>
+      <img src="./images/image-rules-bonus.svg">
+    </modal>
+  </div>
+</body>
+</html>
