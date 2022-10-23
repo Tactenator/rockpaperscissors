@@ -158,8 +158,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
             else {
                 result.innerHTML = "You lose"
                 setTimeout(() => {
-                    boxShadow.style.display = "block";
-                    boxShadow.style.left = "61%";
+                    computerDiv.classList.add('box-shadow')
                 }, 2000)
                 handleResult(); 
             }
@@ -171,8 +170,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         score++;
         setTimeout(() => {
             scoreDiv.innerHTML = score;
-            boxShadow.style.display = "block";
-            boxShadow.style.left = "23.38%";
+            playerDiv.classList.add('box-shadow')
          }, 2000)    
     }
 
@@ -188,6 +186,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
         gameContainer.classList.toggle('hide');
         faceoffContainer.classList.toggle('hide');
         computerDiv.classList.toggle('hide');
+        playerDiv.classList.remove('box-shadow')
+        computerDiv.classList.remove('box-shadow')
         resultCont.classList.toggle('hide');
         boxShadow.style.display = "none";
     }

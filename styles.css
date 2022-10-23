@@ -335,20 +335,7 @@ body {
 }
 
 
-.winner-circle {
-    height: 15.8vw; 
-    width: 15.8vw; 
-    border-radius: 50%; 
-    position: absolute; 
-    top: 47.4%; 
-    /* left: 23.38%;  */
-    left: 0%;
-    display: none; 
-}
-
 .box-shadow {
-    height: 15.8vw; 
-    width: 15.8vw; 
     animation: win 1.4s infinite; 
 }
 
