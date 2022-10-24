@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <script src="/script.js"></script>
+  <script src="./node_modules/animejs/lib/anime.min.js"></script>
   <title>Rock, Paper, Scissors, Lizard, Spock</title>
 </head>
 <body>
@@ -35,14 +36,14 @@
         <div class="player-choice-msg">You picked</div>
         <div class="human player-choice"><img id="player" src="#" alt="Player's game choice"></div>
       </div>
-      <div class="result-container hide">
+      <div class="result-container">
         <div class="result"></div>
         <button class="game-reset">Play Again</button>
       </div>
       <div class="computer">
         <div class="player-choice-msg">The House picked</div>
         <div class="precursor"></div>
-        <div class="nonhuman player-choice box-shadow hide"><img id="computer" src="#" alt="Computer's game choice"></div>
+        <div class="nonhuman player-choice hide"><img id="computer" src="#" alt="Computer's game choice"></div>
       </div>
     </div>
     <aside class="rules">

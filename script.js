@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
     const result = document.querySelector('.result');
     const reset = document.querySelector('.game-reset');
 
-    const boxShadow = document.querySelector('.winner-circle');
-
     const playerDiv = document.querySelector('.human');
     const computerDiv = document.querySelector('.nonhuman');
 
@@ -28,6 +26,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     let computersChoice = "";
 
     let score = 0; 
+
 
     const scissors = {
         image: './images/icon-scissors.svg', 
@@ -171,13 +170,13 @@ document.addEventListener('DOMContentLoaded', (e) => {
         setTimeout(() => {
             scoreDiv.innerHTML = score;
             playerDiv.classList.add('box-shadow')
-         }, 2000)    
+         }, 2500)    
     }
 
     const handleResult = () => {
-        setTimeout(() => {
-            resultCont.classList.toggle('hide');
-         }, 2000) 
+        moveComp() 
+        movePlayer() 
+        moveResult()
     }
 
     const gameReset = () => {
@@ -188,9 +187,58 @@ document.addEventListener('DOMContentLoaded', (e) => {
         computerDiv.classList.toggle('hide');
         playerDiv.classList.remove('box-shadow')
         computerDiv.classList.remove('box-shadow')
-        resultCont.classList.toggle('hide');
-        boxShadow.style.display = "none";
+        resetElements()
     }
+
+    const moveComp = () => {
+        anime({
+            targets: '.computer',
+            easing: 'easeOutExpo',
+            translateX: 150, 
+            delay: 2000
+          });
+    }
+
+    const movePlayer = () => {
+        anime({
+            targets: '.player',
+            easing: 'easeOutExpo',
+            translateX: -150, 
+            delay: 2000
+          });
+    }
+
+    const moveResult = () => {
+        anime({
+            targets: '.result-container',
+            translateY: 0, 
+            easing: 'easeOutExpo',
+            duration: 2000, 
+            delay: 2500
+        });
+    }
+
+    const resetElements = () => {
+        anime({
+            targets: '.computer',
+            easing: 'easeOutExpo',
+            translateX: -50, 
+            duration: 1
+          });
+          anime({
+            targets: '.player',
+            easing: 'easeOutExpo',
+            translateX: 50, 
+            duration: 1
+          });
+          anime({
+            targets: '.result-container',
+            translateY: 300, 
+            easing: 'easeOutExpo'
+        });
+    }
+
+    resetElements(); 
 
     rulesButton.addEventListener('click', () => {
         rulesModal.style.display = 'block';
