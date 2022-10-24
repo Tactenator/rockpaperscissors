@@ -11,11 +11,10 @@
 body {
     background: rgb(31,55,87);
     background: radial-gradient(circle at center top, rgba(31,55,87,1) 0%, rgba(19,21,56,1) 100%);
-    position: relative; 
+    height: 100vh; 
 }
 
 .container{
-    height: 100vh; 
     display: flex; 
     flex-direction: column;
     justify-content: start;
@@ -24,7 +23,7 @@ body {
 }
 
 .scoreboard {
-    border: 2px solid hsl(217, 16%, 45%);
+    border: 4px solid hsl(217, 16%, 45%);
     padding: 40px; 
     color: white; 
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -215,6 +214,7 @@ body {
     position: relative;  
 }
 
+
 #player, #computer {
     width: 40%; 
     height: auto; 
@@ -361,3 +361,47 @@ body {
                     0px 0px 0px 180px rgba(255, 255, 255, 0.034);
     }
 }
+
+@media screen and (width < 600px) {
+    .container {
+        width: 100vw
+    }
+
+    .scoreboard {
+        width: 90vw; 
+        justify-content: space-between;
+        gap: 5vw; 
+        padding: 20px; 
+        border-radius: 15px; 
+    }
+
+    .score-container{
+        padding: 12.5px 25px; 
+    }
+
+    .score-container h3 {
+        font-size: 14px; 
+    }
+
+    .score-container h1 {
+        font-size: 44px; 
+    }
+
+    .options {
+        font-size: 10px; 
+        width: 24vw; 
+    }
+
+    .game-container{
+        grid-template-columns: 125px 125px 125px;
+    }
+
+    .grid-item {
+        height: 125px; 
+        width: 125px; 
+    }
+
+    .grid-item img{
+        transform: scale(.80);
+    }
+  }
