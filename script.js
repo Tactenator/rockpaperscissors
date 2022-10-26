@@ -26,32 +26,53 @@ document.addEventListener('DOMContentLoaded', (e) => {
     let computersChoice = "";
 
     let score = 0; 
+    let width = screen.width;
+
+    console.log(width)
+    
 
 
     const scissors = {
         image: './images/icon-scissors.svg', 
-        border: 'hsl(39, 89%, 49%) 30px solid'
+        border: 'hsl(39, 89%, 49%) 30px solid',
+        mobile: 'hsl(39, 89%, 49%) 15px solid',
+        shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(39, 89%, 49%, 0.747)'
     }
 
     const rock = {
         image: './images/icon-rock.svg', 
-        border: 'hsl(349, 71%, 52%) 30px solid'
+        border: 'hsl(349, 71%, 52%) 15px solid',
+        mobile: 'hsl(349, 71%, 52%) 15px solid',
+        shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(349, 71%, 52%, 0.753)'
     }
 
     const paper = {
         image: './images/icon-paper.svg', 
-        border: 'hsl(230, 89%, 62%) 30px solid'
+        border: 'hsl(230, 89%, 62%) 30px solid',
+        mobile: 'hsl(230, 89%, 62%) 15px solid',
+        shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(230, 89%, 62%, 0.74)'
     }
 
     const spock = {
         image: './images/icon-spock.svg', 
-        border: 'hsl(189, 59%, 53%) 30px solid'
+        border: 'hsl(189, 59%, 53%) 30px solid',
+        mobile: 'hsl(189, 59%, 53%) 15px solid',
+        shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(189, 59%, 53%, 0.747)'
     }
 
     const lizard = {
         image: './images/icon-lizard.svg', 
-        border: 'hsl(261, 73%, 60%) 30px solid'
+        border: 'hsl(261, 73%, 60%) 30px solid',
+        mobile: 'hsl(261, 73%, 60%) 15px solid',
+        shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(261, 73%, 60%, 0.74)'
     }
+
+    // playersChoice = "rock"
+    // playerChoice.src = rock.image;
+    // playerDiv.style.border = rock.border;
+
+    // computerChoice.src = paper.image;
+    // computerDiv.style.border = paper.border;
 
     const choiceSelected = (e) =>
     {
@@ -60,30 +81,35 @@ document.addEventListener('DOMContentLoaded', (e) => {
                 playersChoice = "scissors"
                 playerChoice.src = scissors.image; 
                 playerDiv.style.border = scissors.border;  
+                playerDiv.style.boxShadow = scissors.shadow
                 setComputer();   
                 break; 
             case "paper": 
                 playersChoice = "paper"; 
                 playerChoice.src = paper.image;
-                playerDiv.style.border = paper.border; 
+                playerDiv.style.border = paper.border;
+                playerDiv.style.boxShadow = paper.shadow 
                 setComputer();
                 break; 
             case "rock": 
                 playersChoice = "rock"
                 playerChoice.src = rock.image;
                 playerDiv.style.border = rock.border; 
+                playerDiv.style.boxShadow = rock.shadow
                 setComputer();
                 break; 
             case "spock": 
                 playersChoice = "spock"
                 playerChoice.src = spock.image; 
-                playerDiv.style.border = spock.border; 
+                playerDiv.style.border = spock.border;
+                playerDiv.style.boxShadow = spock.shadow 
                 setComputer();
                 break; 
             case "lizard": 
                 playersChoice = "lizard"
                 playerChoice.src = lizard.image;  
                 playerDiv.style.border = lizard.border; 
+                playerDiv.style.boxShadow = lizard.shadow
                 setComputer();
                 break; 
         }
@@ -174,8 +200,11 @@ document.addEventListener('DOMContentLoaded', (e) => {
     }
 
     const handleResult = () => {
-        moveComp() 
-        movePlayer() 
+        if(window.innerWidth > 600)
+        {
+            moveComp() 
+            movePlayer()
+        } 
         moveResult()
     }
 

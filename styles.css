@@ -404,4 +404,45 @@ body {
     .grid-item img{
         transform: scale(.80);
     }
+
+    .rules {
+        right: 32vw;
+    }
+
+    .faceoff-container{ 
+        justify-content: space-between;
+        flex-wrap: wrap;   
+    }
+
+    .player, .computer {
+        width: 155px; 
+    }
+
+    .player-choice-msg {
+        order: 2; 
+        margin-top: 25px; 
+        font-size: 20px; 
+        height: 25px; 
+    }
+
+    .player-choice {
+        width: 145px; 
+        height: 145px; 
+    }
+
+    .precursor {
+        width: 135px; 
+        height: 135px; 
+    }
+
+    .result-container {
+        margin: auto; 
+        order: 3; 
+    }
+
+    .game-reset {
+        width: 55vw; 
+    }
+
+    
   }
