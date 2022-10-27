@@ -69,7 +69,7 @@ body {
     position: relative; 
     z-index: 1;     
     display: grid; 
-    grid-template-columns: 100px 100px 100px; 
+    grid-template-columns: 150px 150px 150px; 
     grid-template-rows: auto;
     gap: 15px; 
     padding: 10px;  
@@ -81,8 +81,8 @@ body {
 }
 
 .grid-item {
-    height: 100px; 
-    width: 100px; 
+    height: 150px; 
+    width: 150px; 
     border-radius: 50%;
     background: white; 
     display: flex; 
@@ -398,12 +398,12 @@ body {
     }
 
     .game-container{
-        grid-template-columns: 125px 125px 125px;
+        grid-template-columns: 100px 100px 100px;
     }
 
     .grid-item {
-        height: 125px; 
-        width: 125px; 
+        height: 100px; 
+        width: 100px; 
     }
 
     .grid-item img{
