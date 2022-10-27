@@ -364,8 +364,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .container {
-        width: 100vw;
-        height: 150vh; 
+        width: 100vw; 
     }
 
     .scoreboard {
