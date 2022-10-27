@@ -374,6 +374,7 @@ body {
         gap: 5vw; 
         padding: 20px; 
         border-radius: 15px; 
+        margin: 10px 0; 
     }
 
     .score-container{
@@ -407,7 +408,15 @@ body {
     }
 
     .grid-item img{
-        transform: scale(.80);
+        transform: scale(.65);
+    }
+
+    .four{
+        transform: translateX(45px);
+    }
+
+    .five{
+        transform: translateX(-45px);
     }
 
     .rules {
