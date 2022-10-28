@@ -203,6 +203,7 @@ body {
     color: #fff; 
     font-family: 'Barlow Semi Condensed', sans-serif; 
     text-transform: uppercase;
+    overflow-y: hidden; 
 }
 
 .player, .computer {
