@@ -155,6 +155,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     const startGame = () =>{
         //Blob of logic to see who wins
+        rulesButton.classList.add('hide');
         if(playersChoice === computersChoice){
             result.innerHTML = "Tie"
             handleResult(); 
@@ -216,6 +217,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         computerDiv.classList.toggle('hide');
         playerDiv.classList.remove('box-shadow')
         computerDiv.classList.remove('box-shadow')
+        rulesButton.classList.remove('hide');
         resetElements()
     }
 
