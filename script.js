@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     const rock = {
         image: './images/icon-rock.svg', 
-        border: 'hsl(349, 71%, 52%) 15px solid',
+        border: 'hsl(349, 71%, 52%) 30px solid',
         mobile: 'hsl(349, 71%, 52%) 15px solid',
         shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(349, 71%, 52%, 0.753)'
     }
@@ -80,35 +80,35 @@ document.addEventListener('DOMContentLoaded', (e) => {
             case "scissors": 
                 playersChoice = "scissors"
                 playerChoice.src = scissors.image; 
-                playerDiv.style.border = scissors.border;  
+                window.innerWidth > 600 ? playerDiv.style.border = scissors.border : playerDiv.style.border = scissors.mobile 
                 playerDiv.style.boxShadow = scissors.shadow
                 setComputer();   
                 break; 
             case "paper": 
                 playersChoice = "paper"; 
                 playerChoice.src = paper.image;
-                playerDiv.style.border = paper.border;
+                window.innerWidth > 600 ? playerDiv.style.border = paper.border : playerDiv.style.border = paper.mobile 
                 playerDiv.style.boxShadow = paper.shadow 
                 setComputer();
                 break; 
             case "rock": 
                 playersChoice = "rock"
                 playerChoice.src = rock.image;
-                playerDiv.style.border = rock.border; 
+                window.innerWidth > 600 ? playerDiv.style.border = rock.border : playerDiv.style.border = rock.mobile  
                 playerDiv.style.boxShadow = rock.shadow
                 setComputer();
                 break; 
             case "spock": 
                 playersChoice = "spock"
                 playerChoice.src = spock.image; 
-                playerDiv.style.border = spock.border;
+                window.innerWidth > 600 ? playerDiv.style.border = spock.border : playerDiv.style.border = spock.mobile 
                 playerDiv.style.boxShadow = spock.shadow 
                 setComputer();
                 break; 
             case "lizard": 
                 playersChoice = "lizard"
                 playerChoice.src = lizard.image;  
-                playerDiv.style.border = lizard.border; 
+                window.innerWidth > 600 ? playerDiv.style.border = lizard.border : playerDiv.style.border = lizard.mobile  
                 playerDiv.style.boxShadow = lizard.shadow
                 setComputer();
                 break; 
@@ -120,23 +120,28 @@ document.addEventListener('DOMContentLoaded', (e) => {
         switch(computersChoice) {
             case "scissors": 
                 computerChoice.src = scissors.image;
-                computerDiv.style.border = scissors.border;
+                window.innerWidth > 600 ? computerDiv.style.border = scissors.border : computerDiv.style.border = scissors.mobile
+                computerDiv.style.boxShadow = scissors.shadow
                 break; 
             case "paper": 
                 computerChoice.src = paper.image;
-                computerDiv.style.border = paper.border;
+                window.innerWidth > 600 ? computerDiv.style.border = paper.border : computerDiv.style.border = paper.mobile
+                computerDiv.style.boxShadow = paper.shadow
                 break; 
             case "rock": 
                 computerChoice.src = rock.image;
-                computerDiv.style.border = rock.border;
+                window.innerWidth > 600 ? computerDiv.style.border = rock.border : computerDiv.style.border = rock.mobile
+                computerDiv.style.boxShadow = rock.shadow
                 break; 
             case "spock": 
                 computerChoice.src = spock.image;
-                computerDiv.style.border = spock.border;
+                window.innerWidth > 600 ? computerDiv.style.border = spock.border : computerDiv.style.border = spock.mobile
+                computerDiv.style.boxShadow = spock.shadow
                 break; 
             case "lizard": 
                 computerChoice.src = lizard.image;
-                computerDiv.style.border = lizard.border;
+                window.innerWidth > 600 ? computerDiv.style.border = lizard.border : computerDiv.style.border = lizard.mobile
+                computerDiv.style.boxShadow = lizard.shadow
                 break; 
         } 
         changeScene();  
