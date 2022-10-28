@@ -423,8 +423,8 @@ body {
     }
 
     .faceoff-container{ 
-        justify-content: space-between;
-        flex-wrap: wrap;   
+        flex-wrap: wrap;  
+        gap: 15px; 
     }
 
     .player, .computer {
@@ -444,8 +444,8 @@ body {
     }
 
     .precursor {
-        width: 135px; 
-        height: 135px; 
+        width: 145px; 
+        height: 145px; 
     }
 
     .result-container {

@@ -248,25 +248,27 @@ document.addEventListener('DOMContentLoaded', (e) => {
     }
 
     const resetElements = () => {
-        anime({
-            targets: '.computer',
-            easing: 'easeOutExpo',
-            translateX: -50, 
-            duration: 1
-          });
-          anime({
-            targets: '.player',
-            easing: 'easeOutExpo',
-            translateX: 50, 
-            duration: 1
-          });
+        if(window.innerWidth > 600){
+            anime({
+                targets: '.computer',
+                easing: 'easeOutExpo',
+                translateX: -50, 
+                duration: 1
+              });
+              anime({
+                targets: '.player',
+                easing: 'easeOutExpo',
+                translateX: 50, 
+                duration: 1
+              });
+        }
           anime({
             targets: '.result-container',
             translateY: 300, 
             easing: 'easeOutExpo'
         });
     }
-
+    
     resetElements(); 
 
     rulesButton.addEventListener('click', () => {
