@@ -425,6 +425,7 @@ body {
     .faceoff-container{ 
         flex-wrap: wrap;  
         gap: 15px; 
+        padding: 10px; 
     }
 
     .player, .computer {
@@ -438,14 +439,10 @@ body {
         height: 25px; 
     }
 
-    .player-choice {
+    .player-choice, .precursor {
         width: 145px; 
         height: 145px; 
-    }
-
-    .precursor {
-        width: 145px; 
-        height: 145px; 
+        margin-top: 50px; 
     }
 
     .result-container {
