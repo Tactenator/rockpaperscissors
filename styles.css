@@ -19,6 +19,8 @@ body {
     justify-content: start;
     align-items:center;
     margin: auto; 
+    overflow: hidden; 
+    height: 100vh; 
 }
 
 .scoreboard {
@@ -248,7 +250,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 25px; 
-    justify-content: center;  
+    justify-content: center;   
 }
 
 .result {

@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }
           anime({
             targets: '.result-container',
-            translateY: 300, 
+            translateY: 600, 
             easing: 'easeOutExpo'
         });
     }
