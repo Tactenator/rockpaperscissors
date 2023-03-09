@@ -416,8 +416,8 @@ body {
         transform: translateX(-45px);
     }
 
-    .rules {
-        right: 32vw;
+    .rules{
+        width: 100%;
     }
 
     .faceoff-container{ 
