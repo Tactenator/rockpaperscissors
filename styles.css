@@ -412,6 +412,11 @@ body {
         transform: scale(.65);
     }
 
+    #scissors img, #rock img, #lizard img, #paper img, #spock img {
+        width: 75%; 
+        height: auto; 
+    }
+
     .four{
         transform: translateX(45px);
     }
