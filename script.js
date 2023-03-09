@@ -34,36 +34,36 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
     const scissors = {
         image: './images/icon-scissors.svg', 
-        border: 'hsl(39, 89%, 49%) 30px solid',
-        mobile: 'hsl(39, 89%, 49%) 15px solid',
+        border: 'hsl(39, 89%, 49%) 1.5rem solid',
+        mobile: 'hsl(39, 89%, 49%) 0.75rem solid',
         shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(39, 89%, 49%, 0.747)'
     }
 
     const rock = {
         image: './images/icon-rock.svg', 
-        border: 'hsl(349, 71%, 52%) 30px solid',
-        mobile: 'hsl(349, 71%, 52%) 15px solid',
+        border: 'hsl(349, 71%, 52%) 1.5rem solid',
+        mobile: 'hsl(349, 71%, 52%) 0.75rem solid',
         shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(349, 71%, 52%, 0.753)'
     }
 
     const paper = {
         image: './images/icon-paper.svg', 
-        border: 'hsl(230, 89%, 62%) 30px solid',
-        mobile: 'hsl(230, 89%, 62%) 15px solid',
+        border: 'hsl(230, 89%, 62%) 1.5rem solid',
+        mobile: 'hsl(230, 89%, 62%) 0.75rem solid',
         shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(230, 89%, 62%, 0.74)'
     }
 
     const spock = {
         image: './images/icon-spock.svg', 
-        border: 'hsl(189, 59%, 53%) 30px solid',
-        mobile: 'hsl(189, 59%, 53%) 15px solid',
+        border: 'hsl(189, 59%, 53%) 1.5rem solid',
+        mobile: 'hsl(189, 59%, 53%) 0.75rem solid',
         shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(189, 59%, 53%, 0.747)'
     }
 
     const lizard = {
         image: './images/icon-lizard.svg', 
-        border: 'hsl(261, 73%, 60%) 30px solid',
-        mobile: 'hsl(261, 73%, 60%) 15px solid',
+        border: 'hsl(261, 73%, 60%) 1.5rem solid',
+        mobile: 'hsl(261, 73%, 60%) 0.75rem solid',
         shadow: 'inset 0px 6px 0px 0px #cbc8c8, 0px 6px 0px 0px hsla(261, 73%, 60%, 0.74)'
     }
 
