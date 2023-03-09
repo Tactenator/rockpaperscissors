@@ -392,6 +392,7 @@ body {
 
     .game-container{
         grid-template-columns: 7rem 7rem 7rem;
+        gap: 0.7vh;
     }
 
     .grid-item {
