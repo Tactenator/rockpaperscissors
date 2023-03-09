@@ -20,7 +20,7 @@ body {
     align-items:center;
     margin: auto; 
     overflow: hidden;
-    height: 100vh; 
+    min-height: 100vh; 
 }
 
 .scoreboard {
