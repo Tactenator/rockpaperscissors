@@ -418,6 +418,7 @@ body {
 
     .rules{
         padding: 1rem 3rem;
+        margin-top: 5vh; 
     }
 
     .faceoff-container{ 
