@@ -47,7 +47,7 @@ body {
     background: #fff; 
     justify-content: space-between;
     align-items: center;
-    padding: 25px 50px; 
+    padding: 1.5rem 3rem; 
     border-radius: 15px;
 }
 
@@ -61,8 +61,8 @@ body {
 
 .score-container h1{
     color:hsl(229, 25%, 31%);
-    padding: 15px; 
-    font-size: 64px; 
+    padding: 1rem; 
+    font-size: 4rem; 
     text-align: center;
 }
 
@@ -72,7 +72,7 @@ body {
     display: grid; 
     grid-template-columns: 9rem 9rem 9rem; 
     grid-template-rows: auto;
-    gap: 15px;  
+    gap: 1.3vh;  
     /* display: none;   */
     grid-template-areas: 
     ". one . "
@@ -116,7 +116,7 @@ body {
 }
 
 #scissors img, #rock img, #lizard img, #paper img, #spock img {
-    width: 50%; 
+    width: 45%; 
     height: auto; 
 }
 
@@ -237,6 +237,7 @@ body {
 
 .player-choice-msg{
     width: 100%; 
+    font-size: 2.5rem;
 }
 
 .player-choice {
@@ -244,7 +245,7 @@ body {
     width: 15.8vw; 
     background: #fff; 
     border-radius: 50%;
-    margin-top: 100px; 
+    margin-top: 6.5rem; 
     display: flex; 
     justify-content: center;
     align-items: center; 
@@ -254,7 +255,7 @@ body {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    gap: 25px; 
+    gap: 2rem; 
     justify-content: center;   
 }
 
@@ -285,7 +286,7 @@ body {
     border-radius: 15px; 
     color: #fff; 
     text-transform: uppercase; 
-    padding: 15px 45px; 
+    padding: 2rem 6rem; 
     bottom: 5%;
     right: 5%;
     letter-spacing: 0.2em;
@@ -301,7 +302,7 @@ body {
 
 #modal{
     background: #fff; 
-    padding: 35px; 
+    padding: 2rem; 
     border-radius: 15px;
     color: hsl(229, 25%, 31%);  
     position: absolute; 
@@ -329,7 +330,7 @@ body {
 .close {
     color: hsla(217, 16%, 45%, 0.418);
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 50px; 
+    font-size: 4rem; 
     transition: 0.2s; 
 }
 
@@ -377,21 +378,11 @@ body {
         width: 90vw; 
         justify-content: space-between;
         gap: 5vw; 
-        padding: 20px; 
-        border-radius: 15px; 
-        margin: 10px 0; 
-    }
-
-    .score-container{
-        padding: 12.5px 25px; 
+       
     }
 
     .score-container h3 {
-        font-size: 14px; 
-    }
-
-    .score-container h1 {
-        font-size: 44px; 
+        font-size: 1.5rem; 
     }
 
     .options {
@@ -400,7 +391,7 @@ body {
     }
 
     .game-container{
-        grid-template-columns: 100px 100px 100px;
+        grid-template-columns: 7rem 7rem 7rem;
     }
 
     .grid-item {
