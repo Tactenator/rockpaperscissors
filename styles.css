@@ -378,15 +378,23 @@ body {
         width: 90vw; 
         justify-content: space-between;
         gap: 5vw; 
-       
+        padding: 1.3rem; 
+    }
+
+    .score-container {
+        padding: 1rem 2rem;
     }
 
     .score-container h3 {
-        font-size: 1.5rem; 
+        font-size: 1.3rem; 
+    }
+
+    .score-container h1 {
+        font-size: 2.2rem; 
     }
 
     .options {
-        font-size: 10px; 
+        font-size: 12px; 
         width: 24vw;  
     }
 
